@@ -22,8 +22,6 @@
 #include <ctime>
 #include <functional>
 
-#include "common.h"
-#include "string.h"
 template<class T = std::string>
 std::vector<T> split_string(const std::string& str, char delim) {
 	size_t num = 1;
