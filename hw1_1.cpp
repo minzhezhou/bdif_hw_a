@@ -10,7 +10,7 @@
 #include "mpi.h"
 #include "record_parser.h"
 #include "ad_tester.h"
-#include "shell.h"
+//#include "shell.h"
 int rank, nodes;
 long long set_wbuf(char* &p, std::vector<string>& vec) {
     long long res = 0;
@@ -236,7 +236,7 @@ int main(int argc, char **argv){
         delete[] wbuf;
     }
 
-    std::cout << shell_get_command_output("free") << "\n";
+    //std::cout << shell_get_command_output("free") << "\n";
     MPI_Finalize();
     return 0;
 }
